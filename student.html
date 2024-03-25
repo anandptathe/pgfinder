@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student PG Finder</title>
+  <link rel="stylesheet" href="STUDENT.CSS" />  <script src="STUDENT.JS"></script>  </head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="student.jpeg" alt="Student studying" class="student-image" />
+      <h1>Find Your Perfect PG</h1>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="search-section">
+        <h2>Find PGs in Your City</h2>
+        <div class="search-form">
+          <label for="city">Select City:</label>
+          <select id="city" name="city" onchange="filterPGs(this.value)">
+            <option value="">Select City</option>  <option value="pune">Pune</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="bangalore">Bangalore</option>
+            <option value="delhi">Delhi</option>
+            <option value="hyderabad">Hyderabad</option>
+          </select>
+          <button type="button" onclick="filterPGs()">Search</button>
+        </div>
+        <div id="pg-results" class="pg-list">
+          </div>
+      </section>
+      
+
+  <footer>
+    <p>&copy; 2024 Student PG Finder. All rights reserved.</p>
+  </footer>
+</body>
+</html>
